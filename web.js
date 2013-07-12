@@ -11,7 +11,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
   //response.send('Hello World 2!');
   var buffer = fs.readFileSync("index.html");
-  var indexstring = buf.toString('utf 8', buffer);
+  var indexstring = buf.toString(buffer, 'utf 8');
   response.send(indexstring);
   //var buf = new buffer(fs.readFileSync("index.html"), 'utf-8');
   //response.send(buf.toString());
