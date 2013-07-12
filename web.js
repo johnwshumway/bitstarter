@@ -8,7 +8,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   //response.send('Hello World 2!');
-  var buffer = fs.readFileSync'(index.html');
+  var buffer = fs.readFileSync("index.html");
   var indexstring = buffer.buf.toString();
   response.send(indexstring);
   //var buffer = new buffer();
